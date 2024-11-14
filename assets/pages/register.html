@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space App</title>
+  <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <main class="login">
+    <form id="register-form">
+      <h1>Regístrate</h1>
+      <p>Ingresa tus datos para registrarte</p>
+      <label>
+        <span>Nombre:</span>
+        <input type="text" placeholder="John Doe" name="name" id="name" required>
+      </label>
+      <label>
+        <span>Correo:</span>
+        <input type="email" placeholder="correo@ejemplo.com" name="email" id="email" required>
+      </label>
+      <label>
+        <span>Contraseña:</span>
+        <input type="password" placeholder="********" name="password" id="password" required>
+      </label>
+      <select name="genero" id="genero">
+        <option>Selecciona tu género</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Femenino">Femenino</option>
+        <option value="Otro">Otro</option>
+      </select>
+      <a href="./login.html">¿Ya tienes cuenta? Inicia sesión</a>
+      <button>Registrarse</button>
+    </form>
+  </main>
+  <script src="../js/register.js"></script>
+</body>
+</html>

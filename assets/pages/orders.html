@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="root"></div>
+  <script>
+    const root = document.getElementById("root");
+    const products = JSON.parse(localStorage.getItem("PRODUCTS"));
+
+    products.forEach(product => {
+      root.innerHTML += product;
+    });
+  </script>
+</body>
+</html>
